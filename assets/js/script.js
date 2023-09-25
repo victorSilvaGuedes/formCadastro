@@ -50,7 +50,7 @@ class Formulario {
     const password = this.form.querySelector('.input-password');
     const confirmPassword = this.form.querySelector('.input-confirm-password');
 
-    if (password.length < 6 || password.length > 12) {
+    if (password.value.length < 6 || password.value.length > 12) {
       valid = false;
       this.createError(password, `*Senha precisa ter entre 6 e 12 caracteres`);
     }
