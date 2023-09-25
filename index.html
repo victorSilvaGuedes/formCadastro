@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formúlario de cadastro</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/1389/1389273.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <section class="container">
+      <h1>Formúlario de cadastro</h1>
+      <hr>
+      <ul>
+        <li>Nenhum campo pode estar vazio;</li>
+        <li>Usuário só pode conter letrar e/ou números;</li>
+        <li>Usúario deverá ter entre 6 a 12 caracteres;</li>
+        <li>Senha precisa ter entre 6 a 12 caracteres;</li>
+        <li>As senhas devem ser iguais.</li>
+      </ul>
+      <hr>
+      <form action="/" method="POST" class="form">
+        <label for="input-name">Nome:</label>
+        <input type="text" class="input-name validate" name="nome" placeholder="Digite seu nome"/>
+
+        <label for="input-surname">Sobrenome:</label>
+        <input type="text" class="input-surname validate" name="sobrenome" placeholder="Digite seu sobrenome"/>
+
+        <label for="input-CPF">CPF:</label>
+        <input type="text" class="input-CPF validate" name="CPF" placeholder="Digite seu CPF"/>
+        
+        <label for="input-user">Usuário:</label>
+        <input type="text" class="input-user validate" name="usuário" placeholder="Digite seu nome de usuário"/>
+
+        <label for="input-password">Senha:</label>
+        <input type="password" class="input-password validate" name="senha" placeholder="Digite sua senha"/>
+
+        <label for="input-confirm-password">Confirmar senha:</label>
+        <input
+          type="password"
+          class="input-confirm-password validate"
+          name="confirmar senha"
+          placeholder="Confirme sua senha"
+        />
+
+        <button id="submit">Enviar</button>
+      </form>
+    </section>
+
+    <script src="./assets/js/validaCPF.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
